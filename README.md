@@ -1,38 +1,17 @@
 
 # DAPP Examples Using Javascript and SWTC-LIB
-
-## swtc-lib 的优点
-
-> - #### [x] 兼容性 完全保持jingtum-lib和jcc_jingtum_lib的接口
-> - #### [-] 模块化 打散准平级结构，理顺依赖关系 
-> - #### [-] 扩展性 对于Remote和Server可以扩展支持
-> - #### [x] 方便性 零配置webpack支持
-> - #### [x] 多支持 console/web/desktop/mobile支持
-
-## 相关知识
-
-> #### 终端 包括Windows的命令行窗口和Unix的命令行终端
-> #### 浏览器 和浏览器的javascript console
-> #### 移动设备 安卓和苹果的手机以及应用
-> #### HTML和CSS
-> #### Node.js 以及npm 包管理程序
-> #### Javascript的运行环境 包括node.js和浏览器
-> #### 打包(bundle)工具 webpack
-> #### Javascript标准和流行的方便的新特性
-> #### 转换(transpile)工具 babel
-> #### 桌面应用 electron
-> #### 前端框架 angular, react, vue.js
-> #### 移动应用 nativescript, react, flutter
-#### 强烈推荐 [廖雪峰的零基础Javascript全栈教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)
+- [在线文档](http://swtc.daszichan.com)
 
 ## 使用swtc-lib
 
 - 正常情况下，所有实例使用的node.js为最新的LTS版本
 - 正常情况下，所有显式安装的包使用缺省的最新版本
 - 正常情况下，我们使用[脚本方式运行](C00)
+- 示例中皆使用测试网服务器，可以用公网服务器替代
 - 用npm安装
 ```bash
 $ npm install swtc-lib # jingtum-lib接口, 版本为1.6.x
+$ npm install swtc-lib@next # jingtum-lib v2接口, 版本为2.0.x
 $ npm install swtc-lib@jcc # jcc_jingtum_lib接口， 版本为1.5.x
 $ npm install swtc-lib@nativescript # 为nativescript定制， 版本为1.7.x
 ```
@@ -75,7 +54,7 @@ const Remote = require('swtc-lib').Remote
 - [W02 常规WEB示例](W02)
 - [W03 打包WEB示例](W03)
 - Angular Web示例
-- React Web示例
+- [W04 React Web示例](W04)
 - [W05 Vue Web示例](W05)
 
 ## DESKTOP 应用
@@ -85,7 +64,7 @@ const Remote = require('swtc-lib').Remote
 > - 通常跨平台兼容
 
 - [D00 相关说明](D00)
-- D01 Electron示例
+- [D01 Electron示例](D01)
 
 ## MOBILE 应用
 
@@ -107,3 +86,20 @@ const Remote = require('swtc-lib').Remote
 > - [A02 承诺 promisify](A02)
 > - [A03 同步 async/await](A03)
 > - 终端图形界面
+
+## 相关知识
+
+> #### 终端 包括Windows的命令行窗口和Unix的命令行终端
+> #### 浏览器 和浏览器的javascript console
+> #### 移动设备 安卓和苹果的手机以及应用
+> #### HTML和CSS
+> #### Node.js 以及npm 包管理程序
+> #### Javascript的运行环境 包括node.js和浏览器
+> #### 打包(bundle)工具 webpack
+> #### Javascript标准和流行的方便的新特性
+> #### 转换(transpile)工具 babel
+> #### 桌面应用 electron
+> #### 前端框架 angular, react, vue.js
+> #### 移动应用 nativescript, react, flutter
+#### 强烈推荐 [廖雪峰的零基础Javascript全栈教程](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000)
+
